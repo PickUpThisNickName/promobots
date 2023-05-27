@@ -6,7 +6,7 @@ import { Home } from './Home/Home';
 
 function App() {
   return (
-    <div className={"h-96"}>
+    <div className={"min-h-96"}>
       <Routes>
         {/* public routes */}
         <Route path="/" element={<Home />}/>
