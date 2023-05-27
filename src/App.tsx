@@ -1,8 +1,7 @@
 import {Route, Routes } from 'react-router-dom';
 import './App.css';
-import { Footer } from './Footer/Footer';
-import { Header } from './Header/Header';
-import { Home } from './Home/Home';
+import { Home } from './components/Pages/Home/Home';
+import { Products } from './components/Pages/Products/Products';
 
 function App() {
   return (
@@ -10,6 +9,7 @@ function App() {
       <Routes>
         {/* public routes */}
         <Route path="/" element={<Home />}/>
+          <Route path="/products" element={<Products/>}/>
       </Routes>
     </div>
   );
