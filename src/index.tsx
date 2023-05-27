@@ -11,13 +11,16 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-      <HashRouter>
-          <Header/>
-            <App />
-          <Footer/>
-      </HashRouter>
-  </React.StrictMode>
+    <div className={"font-sans text-sm md:text-base xl:text-2xl"}>
+        <React.StrictMode>
+            <HashRouter>
+                <Header/>
+                <App />
+                <Footer/>
+            </HashRouter>
+        </React.StrictMode>
+</div>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
